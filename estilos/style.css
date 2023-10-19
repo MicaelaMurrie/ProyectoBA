@@ -1,0 +1,357 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather&family=Oswald:wght@500&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+nav {
+  position: fixed;
+  background: #ead5a1f8;
+  height: 80px;
+  width: 100%;
+  z-index: 5;
+}
+
+.logo {
+  position: absolute;
+  padding: 2px 50px;
+}
+
+.imglogo {
+  height: 76px;
+}
+
+nav ul {
+  float: right;
+  margin-right: 20px;
+}
+
+nav ul li {
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 5px;
+}
+
+nav ul li a {
+  color: #ffffff;
+  font-size: 18px;
+  font-family: Merriweather, sans-serif;
+  padding: 0 20px;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+li a:hover {
+  color: #4f3919;
+  transition: 0.5s;
+}
+
+.checkbtn {
+  font-size: 30px;
+  color: #ffffff;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+
+#check {
+  display: none;
+}
+
+/* header {
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  padding: 0 50px;
+  width: 100%;
+  height: 95px;
+  top: 0;
+  background: linear-gradient(
+    180deg,
+    #ead5a1f8 91%,
+    rgba(234, 213, 161, 0.135) 100%
+  );
+} */
+
+/* .logo {
+  height: 95px;
+  top: auto;
+} */
+
+/* .imglogo {
+  height: 90%;
+} */
+
+/*----- Barra de Navegación -----*/
+
+/* .navbar {
+  font-family: Merriweather, sans-serif;
+  height: 95%;
+  width: 42%;
+  padding: 0;
+  margin: 0;
+} */
+
+/* .ulnav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  font-family: Merriweather, sans-serif;
+  color: #4f3919;
+  margin: 0;
+  padding: 0;
+} */
+
+/* li {
+  list-style: none;
+} */
+
+/* --- Imagen principal --- */
+
+.imghome {
+  width: 100%;
+}
+
+/* Títulos para las secciones */
+
+.titulos {
+  font-family: Oswald, sans-serif;
+  font-size: 30px;
+  color: #59411c;
+  line-height: 30px;
+}
+
+/* Comienzo de sección La Cabaña */
+
+#seccionlacabaña {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 5rem 2.5rem;
+  width: 100%;
+}
+
+/* ---- Carousel Bootstrap ---- */
+
+.slide {
+  width: 30rem;
+}
+
+.carousel-inner {
+  z-index: -1;
+}
+
+.slide img {
+  width: 30rem;
+  height: 30rem;
+}
+
+/* Fin carousel */
+
+.textoinfocabaña {
+  width: 30rem;
+  height: 30rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.titulos {
+  font-family: Oswald, sans-serif;
+  font-size: 30px;
+  color: #59411c;
+  line-height: 30px;
+}
+
+p {
+  font-family: Merriweather, sans-serif;
+  color: #4f3919;
+}
+
+.listadecomodidades {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  /* background-color: aqua; */
+}
+
+.listadecomodidades ul {
+  padding: 0;
+  margin: 0;
+}
+
+span {
+  display: flex;
+}
+
+/* Comienzo de sección Como llegar */
+
+#seccioncomollegar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 5rem 2.5rem;
+  width: 100%;
+  background-color: #eedebb;
+}
+
+.textocomollegar {
+  width: 29rem;
+  height: 18rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.imgmapa {
+  height: 18rem;
+  width: 29rem;
+  background-color: rgb(161, 235, 211);
+}
+
+/* Comienzo de el footer */
+
+footer {
+  height: 180px;
+  width: 100%;
+  background-color: #59411c;
+  color: #ffffff;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.titulosfooter {
+  font-family: Merriweather, sans-serif;
+  font-size: 1rem;
+  display: flex;
+  justify-content: start;
+}
+
+.logofooter {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 16rem;
+  margin-bottom: 30px;
+}
+
+.lifooter {
+  height: 8rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  color: #ffffff;
+  font-family: Merriweather, sans-serif;
+}
+
+.left {
+  align-items: start;
+}
+
+.right {
+  align-items: end;
+}
+
+i {
+  font-size: 20px;
+}
+
+/* --------------Responsive------------ */
+
+@media (max-width: 800px) {
+  .checkbtn {
+    display: block;
+  }
+
+  ul {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #59411c;
+    top: 80px;
+    left: 100%;
+    text-align: center;
+    transition: all 0.5s;
+  }
+
+  nav ul li {
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+  }
+
+  nav ul li a {
+    font-size: 20px;
+  }
+
+  li a:hover {
+    background: none;
+    color: #eedebb;
+  }
+
+  #check:checked ~ ul {
+    left: 0;
+  }
+
+  #seccionlacabaña,
+  #seccioncomollegar {
+    flex-direction: column;
+  }
+
+  .slide {
+    width: 80%;
+  }
+
+  .carousel-inner {
+    z-index: -1;
+  }
+
+  .slide img {
+    width: 80%;
+    height: 80%;
+  }
+
+  .textoinfocabaña {
+    width: 80%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+
+  #seccioncomollegar {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-evenly; */
+    background-color: #eedebb;
+  }
+
+  .textocomollegar {
+    width: 80%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+
+  .imgmapa {
+    width: 80%;
+    background-color: rgb(161, 235, 211);
+  }
+
+  footer {
+    height: auto;
+    width: 100%;
+    color: #ffffff;
+    display: block;
+  }
+}
