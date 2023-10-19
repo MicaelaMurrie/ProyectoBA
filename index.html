@@ -44,69 +44,60 @@
     </header>
 
     <main>
-      <figure>
-        <img
-          class="imghome"
-          src="./img/mike-petrucci-18joWFjUhKw-unsplash.jpg"
-          alt="La Cabaña"
-        />
-      </figure>
+      <img
+        class="imghome"
+        src="./img/mike-petrucci-18joWFjUhKw-unsplash.jpg"
+        alt="La Cabaña"
+      />
 
       <!-- Comienzo de sección La Cabaña -->
 
-      <section id="seccionlacabaña">
-        <figure>
-          <div id="carouselExample" class="carousel slide">
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img
-                  src="./img/saladeestar.jpg"
-                  class="d-block w-100"
-                  alt="Sala de estar de la cabaña"
-                />
-              </div>
-              <div class="carousel-item">
-                <img
-                  src="./img/comedor.jpg"
-                  class="d-block w-100"
-                  alt="Comedor de la cabaña"
-                />
-              </div>
-              <div class="carousel-item">
-                <img
-                  src="./img/dormitorio.jpg"
-                  class="d-block w-100"
-                  alt="Dormitorio de la cabaña"
-                />
-              </div>
+      <article id="seccionlacabaña">
+        <figure id="carouselExample" class="carousel slide">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img
+                src="./img/saladeestar.jpg"
+                class="d-block w-100"
+                alt="Sala de estar de la cabaña"
+              />
             </div>
-            <button
-              class="carousel-control-prev"
-              type="button"
-              data-bs-target="#carouselExample"
-              data-bs-slide="prev"
-            >
-              <span
-                class="carousel-control-prev-icon"
-                aria-hidden="true"
-              ></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button
-              class="carousel-control-next"
-              type="button"
-              data-bs-target="#carouselExample"
-              data-bs-slide="next"
-            >
-              <span
-                class="carousel-control-next-icon"
-                aria-hidden="true"
-              ></span>
-              <span class="visually-hidden">Next</span>
-            </button>
+            <div class="carousel-item">
+              <img
+                src="./img/comedor.jpg"
+                class="d-block w-100"
+                alt="Comedor de la cabaña"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="./img/dormitorio.jpg"
+                class="d-block w-100"
+                alt="Dormitorio de la cabaña"
+              />
+            </div>
           </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExample"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExample"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
         </figure>
-        <div class="textoinfocabaña">
+
+        <section class="textoinfocabaña">
           <h2 class="titulos">La Cabaña</h2>
           <br />
           <p>
@@ -139,13 +130,13 @@
               </li>
             </ul>
           </div>
-        </div>
-      </section>
+        </section>
+      </article>
 
       <!-- Comienzo de sección Como llegar -->
 
-      <section id="seccioncomollegar">
-        <div class="textocomollegar">
+      <article id="seccioncomollegar">
+        <section class="textocomollegar">
           <h2 class="titulos">Como llegar</h2>
           <p>
             La cabaña Claro de Luna se encuentra a siete cuadras de la plaza
@@ -154,36 +145,37 @@
             intetior de Villa Ventana.
           </p>
           <p>Para ver mas detalladamente la ubicacion haga clik en el mapa.</p>
-        </div>
+        </section>
         <figure>
           <div class="imgmapa">Mapa de ubicación</div>
         </figure>
-      </section>
+      </article>
     </main>
 
     <!-- Comienzo de el footer -->
 
     <footer id="contacto">
-      <div class="contactanos">
-        <h3 class="titulosfooter">CONTACTANOS</h3>
-        <ul class="lifooter left">
-          <li>+5492284560619</li>
-          <li>+5492284123456</li>
-          <li>clarodeluna@blablabla</li>
-        </ul>
-      </div>
+      <section class="contactanos">
+        <h5 class="titulosfooter">CONTACTANOS</h5>
 
-      <div class="logofooter">
-        <img src="./img/logofooter.png" alt="logo" />
-      </div>
+        <h6>+5492284560619</h6>
+        <h6>+5492284123456</h6>
+        <h6>clarodeluna@blablabla</h6>
+      </section>
 
-      <div class="seguinos">
-        <h3 class="titulosfooter">SEGUINOS EN NUESTRAS REDES</h3>
-        <ul class="lifooter right">
-          <li><i class="fa-brands fa-facebook"></i> @clarodeluna</li>
-          <li><i class="fa-brands fa-instagram"></i> @clarodeluna</li>
-        </ul>
-      </div>
+      <section class="logofooter">
+        <img src="./img/logofooter.png" alt="Logo" class="imgfooter" />
+      </section>
+
+      <section class="seguinos">
+        <h5 class="titulosfooter">SEGUINOS EN REDES</h5>
+        <a>
+          <h6><i class="fa-brands fa-facebook"></i> @clarodeluna</h6>
+        </a>
+        <a>
+          <h6><i class="fa-brands fa-instagram"></i> @clarodeluna</h6>
+        </a>
+      </section>
     </footer>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
