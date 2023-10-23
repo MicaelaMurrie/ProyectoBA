@@ -82,6 +82,10 @@ li a:hover {
   line-height: 30px;
 }
 
+article {
+  align-items: center;
+}
+
 /* Comienzo de sección La Cabaña */
 
 #seccionlacabaña {
@@ -277,7 +281,7 @@ footer {
   }
 
   .imgmapa {
-    width: 80%;
+    width: 25rem;
     background-color: rgb(161, 235, 211);
   }
 
