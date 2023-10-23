@@ -281,7 +281,8 @@ footer {
   }
 
   .imgmapa {
-    width: 25rem;
+    height: 10rem;
+    width: 20rem;
     background-color: rgb(161, 235, 211);
   }
 
