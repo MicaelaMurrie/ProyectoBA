@@ -168,7 +168,70 @@ span {
   justify-content: space-evenly;
 }
 
-/* Comienzo de el footer */
+/* Comienzo de la Seccion Contacto */
+
+#seccioncontacto {
+  width: 100%;
+}
+
+form {
+  width: 60%;
+  max-width: 600px;
+  min-width: 300px;
+  margin: 0 auto;
+  padding-bottom: 3rem;
+}
+
+.tituloContacto {
+  font-family: Oswald, sans-serif;
+  color: #4f3919;
+  text-align: center;
+  padding-top: 3rem;
+}
+
+.conteinerContacto {
+  display: flex;
+}
+
+form label {
+  display: block;
+  width: 100%;
+  margin: 1rem 0;
+  font-family: Merriweather, sans-serif;
+  color: #4f3919;
+}
+
+input,
+textarea,
+select {
+  margin: 10px 0 0 0;
+  width: 100%;
+  min-height: 2em;
+  background-color: #f4ead5;
+  border: 1px solid #4f3919;
+  border-radius: 2px;
+  color: #4f3919;
+}
+
+::placeholder {
+  color: #4f3919bd;
+}
+
+#submit {
+  display: block;
+  width: 80%;
+  margin: 1rem auto;
+  height: 2em;
+  font-family: Oswald, sans-serif;
+  font-size: 20px;
+  background-color: #59411c;
+  border-color: #4f3919;
+  border-radius: 2px;
+  min-width: 300px;
+  color: #f4ead5;
+}
+
+/* Comienzo del footer */
 
 footer {
   background-color: #59411c;
@@ -185,7 +248,7 @@ footer {
   height: 76px;
 }
 
-/* --------------Responsive------------ */
+/* ----------------- Responsive ------------------ */
 
 @media (max-width: 800px) {
   /* --- Comienza el menú hamburguesa --- */

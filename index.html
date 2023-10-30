@@ -38,7 +38,7 @@
         <ul>
           <li><a href="#seccionlacabaña">La Cabaña</a></li>
           <li><a href="#seccioncomollegar">Como llegar</a></li>
-          <li><a href="#contacto">Contacto</a></li>
+          <li><a href="#seccioncontacto">Contacto</a></li>
         </ul>
       </nav>
     </header>
@@ -143,13 +143,12 @@
             <strong>Siete Colores</strong> entre la avenida principal
             <strong>Cruz del Sur</strong> y la calle
             <strong>Pillahuinco</strong>. La ubicación es ideal ya que está a
-            siete cuadras del dique con arroyo que atraviesa el interior de
-            Villa Ventana, y tambien a siete cuadras del paseo principal.
+            siete cuadras del dique y arroyo que atraviesa el interior de Villa
+            Ventana, y tambien a siete cuadras del paseo principal.
           </p>
           <p>Para ver mas detalladamente la ubicacion haga clik en el mapa.</p>
         </section>
         <figure>
-          <!-- <div class="imgmapa">Mapa de ubicación</div> -->
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d1324.851103967934!2d-61.93122550311051!3d-38.08463615284444!3m2!1i1024!2i768!4f13.1!5e1!3m2!1ses-419!2sar!4v1698178157077!5m2!1ses-419!2sar"
             width="550"
@@ -159,22 +158,79 @@
             loading="lazy"
             referrerpolicy="no-referrer-when-downgrade"
           ></iframe>
-          <!-- <iframe
-            src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1570.1948514156545!2d-61.93144195447019!3d-38.08459189890967!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2sar!4v1698175261725!5m2!1ses-419!2sar"
-            width="550"
-            height="350"
-            style="border: 0"
-            allowfullscreen=""
-            loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"
-          ></iframe> -->
         </figure>
+      </article>
+
+      <!-- Comienzo de sección Contacto -->
+
+      <article id="seccioncontacto">
+        <h2 class="tituloContacto">Contacto</h2>
+
+        <form method="post" action="micaelamurrie@gmail.com">
+          <label for="first-name"
+            >Nombre y Apellido:
+            <input id="first-name" name="first-name" type="text" required
+          /></label>
+
+          <label for="email"
+            >Email: <input id="email" name="email" type="email" required
+          /></label>
+
+          <label for="tel"
+            >Tel/Whatsapp (*)
+            <input
+              id="tel"
+              type="tel"
+              name="tel"
+              placeholder="(Código de área) Número"
+          /></label>
+
+          <label for="ingreso-salida"
+            >Ingreso/Salida
+            <div class="conteinerContacto">
+              <input id="date" type="date" name="date" />
+              <input id="date" type="date" name="date" />
+            </div>
+          </label>
+
+          <label for="cantidadPersonas"
+            >Cantidad de personas (*)
+            <div class="conteinerContacto">
+              <select id="dropdownAdultos" name="dropdownAdultos">
+                <option value="">Adultos</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+              </select>
+              <select id="dropdownMenores" name="dropdownMenores">
+                <option value="">Menores</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+              </select>
+            </div>
+          </label>
+
+          <label for="bio"
+            >Consulta:
+            <textarea
+              id="bio"
+              name="bio"
+              rows="3"
+              cols="30"
+              placeholder="Introduzca su contulta aquí..."
+            ></textarea>
+          </label>
+
+          <input id="submit" type="submit" name="submit" value="Enviar" />
+        </form>
       </article>
     </main>
 
     <!-- Comienzo de el footer -->
 
-    <footer id="contacto">
+    <footer>
       <section class="contactanos">
         <h5 class="titulosfooter">CONTACTANOS</h5>
 
