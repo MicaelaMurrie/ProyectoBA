@@ -166,18 +166,17 @@
       <article id="seccioncontacto">
         <h2 class="tituloContacto">Contacto</h2>
 
-        <form method="post" action="micaelamurrie@gmail.com">
-          <label for="first-name"
-            >Nombre y Apellido:
-            <input id="first-name" name="first-name" type="text" required
+        <form id="form" method="post" action="micaelamurrie@gmail.com">
+          <label for="name"
+            >Nombre y Apellido <input id="name" name="" type="text"
           /></label>
 
           <label for="email"
-            >Email: <input id="email" name="email" type="email" required
+            >Email <input id="email" name="email" type="email"
           /></label>
 
           <label for="tel"
-            >Tel/Whatsapp (*)
+            >Tel/Whatsapp
             <input
               id="tel"
               type="tel"
@@ -194,7 +193,7 @@
           </label>
 
           <label for="cantidadPersonas"
-            >Cantidad de personas (*)
+            >Cantidad de personas
             <div class="conteinerContacto">
               <select id="dropdownAdultos" name="dropdownAdultos">
                 <option value="">Adultos</option>
@@ -213,7 +212,7 @@
           </label>
 
           <label for="bio"
-            >Consulta:
+            >Consulta
             <textarea
               id="bio"
               name="bio"
@@ -224,6 +223,7 @@
           </label>
 
           <input id="submit" type="submit" name="submit" value="Enviar" />
+          <p id="warnings" id="warnings"></p>
         </form>
       </article>
     </main>
@@ -258,5 +258,7 @@
       integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
       crossorigin="anonymous"
     ></script>
+
+    <script src="./js/formvalidation.js"></script>
   </body>
 </html>

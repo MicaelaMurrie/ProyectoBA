@@ -231,6 +231,13 @@ select {
   color: #f4ead5;
 }
 
+#warnings {
+  width: 200px;
+  text-align: center;
+  margin: auto;
+  padding-top: 20px;
+}
+
 /* Comienzo del footer */
 
 footer {
@@ -248,7 +255,7 @@ footer {
   height: 76px;
 }
 
-/* ----------------- Responsive ------------------ */
+/* ------------------------- Responsive -------------------------- */
 
 @media (max-width: 800px) {
   /* --- Comienza el menú hamburguesa --- */
