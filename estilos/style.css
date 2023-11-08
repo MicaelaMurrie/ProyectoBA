@@ -137,7 +137,6 @@ p {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  /* background-color: aqua; */
 }
 
 .listadecomodidades ul {
@@ -220,7 +219,7 @@ select {
 #submit {
   display: block;
   width: 80%;
-  margin: 1rem auto;
+  margin: 0 auto;
   height: 2em;
   font-family: Oswald, sans-serif;
   font-size: 20px;
@@ -255,10 +254,52 @@ footer {
   height: 76px;
 }
 
+footer .seguinos a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: large;
+}
+
+.logoredes {
+  height: 2rem;
+}
+
 /* ------------------------- Responsive -------------------------- */
 
 @media (max-width: 800px) {
   /* --- Comienza el menú hamburguesa --- */
+
+  .bars__menu {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 20%;
+    left: 85%;
+    cursor: pointer;
+  }
+
+  .bars__menu span {
+    display: block;
+    width: 100%;
+    height: 3px;
+    background: #59411c;
+    margin-top: 10px;
+    transform-origin: 0px 100%;
+    transition: all 300ms;
+  }
+
+  .activeline1__bars-menu {
+    transform: rotate(45deg) translate(-1px, 1px);
+  }
+
+  .activeline2__bars-menu {
+    opacity: 0;
+    margin-left: -30px;
+  }
+
+  .activeline3__bars-menu {
+    transform: rotate(-45deg) translate(-2px, 2px);
+  }
 
   .checkbtn {
     display: block;
