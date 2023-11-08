@@ -29,7 +29,15 @@
     <header>
       <nav>
         <input type="checkbox" id="check" />
-        <label for="check" class="checkbtn"> </label>
+        <label for="check" class="checkbtn">
+          <!-- Lineas y Cruz del menu hamburguesa (mediaquery) -->
+
+          <div class="bars__menu">
+            <span class="line1__bars-menu"></span>
+            <span class="line2__bars-menu"></span>
+            <span class="line3__bars-menu"></span>
+          </div>
+        </label>
         <figure class="logo">
           <img src="./img/logoheader.png" alt="Logo" class="imglogo" />
         </figure>
@@ -219,9 +227,8 @@
               placeholder="Introduzca su contulta aquí..."
             ></textarea>
           </label>
-
-          <input id="submit" type="submit" name="submit" value="Enviar" />
           <p id="warnings" id="warnings"></p>
+          <input id="submit" type="submit" name="submit" value="Enviar" />
         </form>
       </article>
     </main>
@@ -243,11 +250,16 @@
 
       <section class="seguinos">
         <h5 class="titulosfooter">SEGUINOS EN REDES</h5>
-        <a>
-          <h6><i class="fa-brands fa-facebook"></i> @clarodeluna</h6>
+        <a href="https://www.facebook.com" target="_blank">
+          <h6>
+            <img class="logoredes" src="./img/facebook.png" /> @clarodeluna
+          </h6>
         </a>
-        <a>
-          <h6><i class="fa-brands fa-instagram"></i> @clarodeluna</h6>
+        <a href="https://www.instagram.com">
+          <h6>
+            <img class="logoredes" src="./img/instagram.png" />
+            @clarodeluna
+          </h6>
         </a>
       </section>
     </footer>
@@ -258,5 +270,6 @@
     ></script>
 
     <script src="./js/formvalidation.js"></script>
+    <script src="./js/menuburguer.js"></script>
   </body>
 </html>
