@@ -345,10 +345,7 @@ footer .seguinos a {
   /* ----- Audio ----- */
 
   audio {
-    position: fixed;
-    bottom: 20px;
-    left: 0px;
-    width: 120px;
+    display: none;
   }
 
   /* --- Imagen del home --- */
