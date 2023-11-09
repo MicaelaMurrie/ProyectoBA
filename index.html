@@ -14,10 +14,6 @@
       integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
       crossorigin="anonymous"
     />
-    <script
-      src="https://kit.fontawesome.com/59b39f4d8a.js"
-      crossorigin="anonymous"
-    ></script>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Claro de Luna - Cabañas</title>
@@ -30,7 +26,7 @@
       <nav>
         <input type="checkbox" id="check" />
         <label for="check" class="checkbtn">
-          <!-- Lineas y Cruz del menu hamburguesa (mediaquery) -->
+          <!-- Lineas del menu hamburguesa (mediaquery) -->
 
           <div class="bars__menu">
             <span class="line1__bars-menu"></span>
@@ -55,7 +51,11 @@
         src="./img/mike-petrucci-18joWFjUhKw-unsplash.jpg"
         alt="La Cabaña"
       />
-
+      <audio
+        controls
+        loop
+        src="./song/Creedence Clearwater Revival - Have You Ever Seen The Rain.mp3"
+      ></audio>
       <!-- Comienzo de sección La Cabaña -->
 
       <article id="seccionlacabaña">
@@ -181,12 +181,12 @@
             >Email <input id="email" name="email" type="email"
           /></label>
 
-          <label for="tel"
+          <label for="phone"
             >Tel/Whatsapp
             <input
-              id="tel"
-              type="tel"
-              name="tel"
+              id="phone"
+              type="phone"
+              name="phone"
               placeholder="(Código de área) Número"
           /></label>
 
@@ -255,7 +255,7 @@
             <img class="logoredes" src="./img/facebook.png" /> @clarodeluna
           </h6>
         </a>
-        <a href="https://www.instagram.com">
+        <a href="https://www.instagram.com" target="_blank">
           <h6>
             <img class="logoredes" src="./img/instagram.png" />
             @clarodeluna
