@@ -244,6 +244,24 @@ select {
   padding-top: 20px;
 }
 
+/* ---- Flecha ---- */
+
+.flecha {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #59411c;
+  font-size: 2.2rem;
+  border-radius: 30%;
+  position: fixed;
+  right: 2rem;
+  bottom: 2rem;
+  cursor: pointer;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.3s;
+}
+
 /* Comienzo del footer */
 
 footer {
