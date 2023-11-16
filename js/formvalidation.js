@@ -32,3 +32,25 @@ form.addEventListener("submit", (e) => {
     parrafo.innerHTML = "Enviado";
   }
 });
+
+function limite(valor, id) {
+  let otro = document.querySelector(id),
+    actual = otro.value;
+
+  otro.innerHTML = "";
+  for (let i = 0, l = 5 - valor, opc; i < l; i++) {
+    opc = document.createElement("option");
+    opc.value = i + 1;
+    opc.text = i + 1;
+    otro.add(opc);
+  }
+
+  if (actual <= otro.options.length) {
+    for (let j = 0, m = otro.options.length; j < m; j++) {
+      if (otro.options[j].value == actual) {
+        otro.options[j].selected = true;
+        break;
+      }
+    }
+  }
+}
