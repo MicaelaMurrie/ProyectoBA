@@ -203,12 +203,8 @@
           <label for="cantidadPersonas"
             >Cantidad de personas
             <div class="conteinerContacto">
-              <select
-                id="cantAdultos"
-                required
-                onchange="limite(this.value, '#cantMenores')"
-              >
-                <option value="">Adultos</option>
+              <select id="cantAdultos">
+                <option value="adultos">Adultos</option>
                 <option value="1">1</option>
                 <option value="2">2</option>
                 <option value="3">3</option>
@@ -216,15 +212,8 @@
                 <option value="5">5</option>
               </select>
 
-              <select
-                id="cantMenores"
-                onchange="limite(this.value, '#cantAdultos')"
-              >
-                <option value="">Menores</option>
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
+              <select id="cantMenores" disabled>
+                <option value="menores">Menores</option>
               </select>
             </div>
           </label>

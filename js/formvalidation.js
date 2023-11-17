@@ -33,24 +33,23 @@ form.addEventListener("submit", (e) => {
   }
 });
 
-function limite(valor, id) {
-  let otro = document.querySelector(id),
-    actual = otro.value;
+const adulto = document.getElementById("cantAdultos");
+adulto.onclick = (e) => {
+  selectAdulto(e);
+};
 
-  otro.innerHTML = "";
-  for (let i = 0, l = 5 - valor, opc; i < l; i++) {
-    opc = document.createElement("option");
-    opc.value = i + 1;
-    opc.text = i + 1;
-    otro.add(opc);
-  }
-
-  if (actual <= otro.options.length) {
-    for (let j = 0, m = otro.options.length; j < m; j++) {
-      if (otro.options[j].value == actual) {
-        otro.options[j].selected = true;
-        break;
-      }
+function selectAdulto(e) {
+  const menores = document.getElementById("cantMenores");
+  if (e.target.value != "adulto") {
+    menores.disabled = false;
+    menores.innerHTML = ' <option value="menores">Menores</option>';
+    console.log(e.target.value);
+    for (let i = 1; i <= 5 - e.target.value; i++) {
+      const option = document.createElement("option");
+      option.value = i;
+      option.innerHTML = i;
+      menores.appendChild(option);
     }
   }
 }
+S;
