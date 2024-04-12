@@ -44,7 +44,7 @@ function selectAdulto(e) {
     menores.disabled = false;
     menores.innerHTML = ' <option value="menores">Menores</option>';
     console.log(e.target.value);
-    for (let i = 1; i <= 5 - e.target.value; i++) {
+    for (let i = 1; i <= 4 - e.target.value; i++) {
       const option = document.createElement("option");
       option.value = i;
       option.innerHTML = i;
