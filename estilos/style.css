@@ -12,53 +12,36 @@
 
 nav {
   position: fixed;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   background: #ead5a1f8;
-  height: 80px;
+  height: 5.3rem;
   width: 100%;
+  padding: 0 2rem;
   z-index: 5;
 }
 
-.logo {
-  position: absolute;
-  padding: 2px 50px;
-}
-
 .imglogo {
-  height: 76px;
-}
-
-audio {
-  position: absolute;
-  bottom: 5%;
-  left: 5%;
-  height: 35px;
-  width: 180px;
+  height: 5rem;
 }
 
 nav ul {
-  float: right;
-  margin-right: 20px;
-  padding-left: 0;
-}
-
-nav ul li {
-  display: inline-block;
-  line-height: 80px;
+  display: flex;
   margin: 0 5px;
 }
 
 nav ul li a {
-  color: #ffffff;
-  font-size: 18px;
-  font-family: Merriweather, sans-serif;
-  padding: 0 20px;
+  color: #4f3919;
+  font-size: 1.3rem;
+  font-family: Oswald, sans-serif;
+  padding: 0 2rem;
   text-transform: uppercase;
   text-decoration: none;
 }
 
-li a:hover {
-  color: #4f3919;
-  transition: 0.5s;
+li:hover {
+  transform: scale(1.1);
 }
 
 .checkbtn {
@@ -130,14 +113,14 @@ article {
 
 .titulos {
   font-family: Oswald, sans-serif;
-  font-size: 30px;
+  font-size: 3rem;
   color: #59411c;
-  line-height: 30px;
 }
 
 p {
-  font-family: Merriweather, sans-serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   color: #4f3919;
+  font-size: 1rem;
 }
 
 .listadecomodidades {
