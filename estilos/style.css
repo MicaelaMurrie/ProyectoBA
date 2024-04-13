@@ -31,11 +31,14 @@ nav ul {
   margin: 0 5px;
 }
 
+nav ul li {
+  margin: 0 2rem;
+}
+
 nav ul li a {
   color: #4f3919;
   font-size: 1.3rem;
   font-family: Oswald, sans-serif;
-  padding: 0 2rem;
   text-transform: uppercase;
   text-decoration: none;
 }
@@ -313,40 +316,29 @@ footer .seguinos a {
     display: block;
   }
 
+  .imglogo {
+    position: absolute;
+  }
+
   ul {
     position: fixed;
     width: 100%;
     height: 100vh;
-    background-color: #59411c;
-    top: 80px;
+    background-color: #eedebb;
+    top: 5.2rem;
     left: 100%;
+    flex-direction: column;
     text-align: start;
+    padding: 1rem;
     transition: all 0.5s;
   }
 
   nav ul li {
-    display: block;
-    margin: 50px 0;
-    line-height: 30px;
-  }
-
-  nav ul li a {
-    font-size: 14px;
-  }
-
-  li a:hover {
-    background: none;
-    color: #eedebb;
+    margin: 0;
   }
 
   #check:checked ~ ul {
-    left: 65%;
-  }
-
-  /* ----- Audio ----- */
-
-  audio {
-    display: none;
+    left: 55%;
   }
 
   /* --- Imagen del home --- */

@@ -1,7 +1,7 @@
 const flecha = document.querySelector(".flecha");
 
 window.addEventListener("scroll", () => {
-  if (scrollY >= 100 && scrollY <= 1900) {
+  if (scrollY >= 500 && scrollY <= 1900) {
     flecha.style.visibility = "visible";
     flecha.style.opacity = "1";
   } else {
